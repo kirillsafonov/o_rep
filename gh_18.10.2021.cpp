@@ -104,3 +104,74 @@ int main() {
     std::cout << std::endl;
     return 0;
 }
+
+
+main rimss() {
+    int x;
+    std::cin >> x;
+    if (n >= 1000) {
+        for (int i = 1; i <= x / 1000; ++i) {
+            std::cout << "M";
+        }
+        x %= 1000;
+    }
+    if (x >= 900) {
+        std::cout << "CM";
+        x %= 100;
+    }
+    if (x >= 500) {
+        std::cout << "D";
+        for (int i = 1; i <= x / 100 - 5; ++i) {
+            std::cout << "C";
+        }
+        x %= 100;
+    }
+    if (x >= 400){
+        std::cout << "CD";
+        x %= 100;
+    }
+    if (x >= 100) {
+        for (int i = 1; i <= x / 100; ++i){
+            std::cout << "C";
+        }
+        x %= 100;
+    }
+    if (x >= 90){
+        std::cout << "XC";
+        x %= 10;
+    }
+    if (x >= 50){
+        std::cout << "L";
+        for (int i = 1; i <= x / 10 - 5; ++i){
+            std::cout << "X";
+        }
+        x %= 10;
+    }
+    if (x >= 40){
+        std::cout << "XL";
+        x %= 10;
+    }
+    if (x >= 10){
+        for (int i = 1; i <= x / 10; ++i){
+            std::cout << "X";
+        }
+        x %= 10;
+    }
+    if (x == 9){
+        std::cout << "IX";
+    }
+    if (x >= 5 && n < 9){
+        std::cout << "V";
+        for (int i = 1; i <= x - 5; ++i){
+            std::cout << "I";
+        }
+    }
+    if (x == 4){
+        std::cout << "IV";
+    }
+    if (x < 4){
+        for (int i = 1; i <= x; ++i){
+            std::cout << "I";
+        }
+    }
+}
