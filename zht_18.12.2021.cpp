@@ -34,3 +34,14 @@ int main() {
     }
     delete[]hxn;
 }
+
+//Перестановка столбцов с зависимыми элементами
+int exCol(int arr[], int rows, int cols, int a, int b) {
+    int tmp;
+    for (int i = 0; i < rows; ++i) {
+        tmp = arr[i * cols + a-1];
+        arr[i * cols + a-1] = arr[i * cols + b-1];
+        arr[i * cols + b-1] = tmp;
+    }
+    return 0;
+}
