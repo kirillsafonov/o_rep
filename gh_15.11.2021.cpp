@@ -102,7 +102,7 @@ int** productMatrix(int** A, int row, int column, int number) {
     }
     return A;
 }
-//8.создание матрицы*число
+//создание матрицы*число
 
 int** CreateProductMatrix(int** A, int row, int column, int number) {
     int** B;
