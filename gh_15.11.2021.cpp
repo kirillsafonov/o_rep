@@ -200,19 +200,19 @@ int main()
 
 
     V = createArray(row, column);
-    std::cout << "----------------------4.E matrix -------------------------------" << std::endl;
+    std::cout << "----------------------E matrix -------------------------------" << std::endl;
     D = eMatrix(V, row, column);
     printArray(D, row, column);
     std::cout << std::endl;
 
-    std::cout << "----------------------3.const array---------------------------------" << std::endl;
+    std::cout << "----------------------const array---------------------------------" << std::endl;
     std::cout << "input your const :\n";
     std::cin >> yr_const;
     initArrayOnlyConst(V, row, column, yr_const);
     printArray(V, row, column);
 
 
-    std::cout << "----------------------5.transpon array------------------------------" << std::endl;
+    std::cout << "----------------------transpon array------------------------------" << std::endl;
     fillarrRandom(V, row, column);
     std::cout << "BEFORE:" << std::endl;
     printArray(V, row, column);
@@ -222,15 +222,15 @@ int main()
     printArray(V, row, column);
     std::cout << std::endl;
 
-    std::cout << "---------------------6. return 180* array---------------------------" << std::endl;
+    std::cout << "---------------------return 180* array---------------------------" << std::endl;
     D = return180Array(V, row, column);
     printArray(D, row, column);
 
-    std::cout << "-----------------------7.product matrix and number-----------------------------" << std::endl;
+    std::cout << "-----------------------product matrix and number-----------------------------" << std::endl;
     V = productMatrix(V, row, column, number = 2);
     printArray(V, row, column);
 
-    std::cout << "-----------------------8.create product matrix and number =4----------------------" << std::endl;
+    std::cout << "-----------------------create product matrix and number =4----------------------" << std::endl;
     B = CreateProductMatrix(V, row, column, 4);
     printArray(B, row, column);
 
@@ -240,7 +240,7 @@ int main()
     printArray(A, row, column);
 
 
-    std::cout << "--------------------9.sum Matrix-------------------------------" << std::endl;
+    std::cout << "--------------------sum Matrix-------------------------------" << std::endl;
     fillarrRandom(A, row, column);
     printArray(A, row, column);
     std::cout << std::endl;
@@ -252,7 +252,7 @@ int main()
     printArray(C, row, column);
     std::cout << std::endl;
 
-    std::cout << "---------------------10.product matrix------------------------------" << std::endl;
+    std::cout << "---------------------product matrix------------------------------" << std::endl;
     std::cout << "razmer row1 and column1:\n";
     std::cin >> row1 >> column1;
     D = createArray(row1, column1);
@@ -267,7 +267,7 @@ int main()
     std::cout << "Matrix A * B" << std::endl;
     C = multMatrix(D, row1, column1, B, row2, column2);
     printArray(C, row1, column2);
-    std::cout << "---------------------11.swap rows or columns------------------------------" << std::endl;
+    std::cout << "---------------------swap rows or columns------------------------------" << std::endl;
     std::cout << std::endl;
     fillarrRandom(A, row, column);
     printArray(A, row, column);
@@ -287,7 +287,7 @@ int main()
     printArray(A, row, column);
     std::cout << std::endl;
 
-    std::cout << "---------------------12. get element-----------------------------" << std::endl;
+    std::cout << "---------------------get element-----------------------------" << std::endl;
     std::cout << "input index of element:\n";
     std::cin >> yourRow >> yourColumn;
     std::cout << getElement(A, yourRow, yourColumn);
